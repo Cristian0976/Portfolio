@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Portfolio Web">
+    <meta name="description" content="Soy un frontend developer. En mi portfolio puedes ver algunos de mis proyectos más destacados, así como mi formación, habilidades y contacto.">
+    <meta name="keywords" content="Portfolio, Front-end developer, ">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Spanish">
+    <meta name="author" content="Cristian Estegiano">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+                <a href="#home" class="active">Inicio</a>
+                <a href="#about">Sobre mi</a>
+                <a href="#technologies">Tecnologías</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- home section-->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola, soy</h3>
+            <h1>Cristian Estegiano</h1>
+            <h3>y soy <span class="multiple-text"></span></h3>
+            <p>"Si puedes imaginarlo puedes programarlo..."</p>
+            <div class="social-media">
+
+                <a href="https://www.facebook.com/cristian.estegiano" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/cristian_estegiano/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Cristian0976" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/cristian-estegiano/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+
+            </div>
+
+            <a href="./img/CVCristianEstegiano.pdf" target="_blank" class="btn">Descargar CV</a>
+
+        </div>
+
+        <div class="home-img">
+            <img src="./img/Cristian.jpg" alt="">
+        </div>
+
+    </section>
+
+
+    <!-- about -->
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="./img/Cristian.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">
+                Sobre <span>Mi</span>
+            </h2>
+            <h3>Frontend Developer </h3>
+            <p>Soy un joven entusiasta de la informática y todo lo relacionado con ella. Actualmente me estoy formando centrado en Front-end. Sin embargo, me gusta explorar nuevos lenguajes y siempre intento estar al día. Aparte de estos, tengo otras habilidades informáticas, como el uso de Genexus 16 para sitios low-code. Mi objetivo es seguir adquiriendo habilidades y crecer como profesional en la industria de desarrollo de software.</p>
+            <a href="#" class="btn">Leer mas</a>
+        </div>
+
+    </section>
+
+
+    <!-- technologies -->
+
+    <section class="technologies" id="technologies">
+
+        <h2 class="heading">Mis <span>Tecnologías</span></h2>
+
+        <div class="technologies-container">
+            <div class="technologies-box">
+                <i class='bx bxl-html5' ></i>
+                <h3>HTML 5</h3>
+            </div>
+        </div>
+        <div class="technologies-container">
+            <div class="technologies-box">
+                <i class='bx bxl-css3' ></i>
+                <h3>CSS 3</h3>
+            </div>
+        </div>
+        <div class="technologies-container">
+            <div class="technologies-box">
+                <i class='bx bxl-javascript' ></i>
+                <h3>JavaScript</h3>
+            </div>
+        </div>
+        <div class="technologies-container">
+            <div class="technologies-box">
+                <i class='bx bxl-python' ></i>
+                <h3>Python</h3>
+            </div>
+        </div>
+        <div class="technologies-container">
+            <div class="technologies-box">
+                <i class='bx bxl-react' ></i>
+                <h3>React JS</h3>
+            </div>
+        </div>
+        <div class="technologies-container">
+            <div class="technologies-box">
+                <i class='bx bxl-git' ></i>
+                <h3>Git</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Últimos <span>Proyectos</span></h2>
+        
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="./img/portada-portfolio.png" alt="portada portfolio">
+                <div class="portfolio-layer">
+                    <h4>Portfolio </h4>
+                    <p>Portfolio profesional con proyectos y contacto.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="./img/coinbaseclon.png" alt="coin base clon">
+                <div class="portfolio-layer">
+                    <h4>Diseño web</h4>
+                    <p>Ejercicio practico de pagina web</p>
+                    <a href="https://github.com/Cristian0976/CoinBaseClon"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./img/TiendaComida.png" alt="tienda de comida">
+                <div class="portfolio-layer">
+                    <h4>Tienda Comida</h4>
+                    <p>proyecto de tienda de comida</p>
+                    <a href="https://github.com/Cristian0976/TiendaComida"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./img/Tiendahalloween.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Tienda web</h4>
+                    <p>Tienda web con temática Halloween</p>
+                    <a href="https://github.com/Cristian0976/TiendaHalloween"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./img/login.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Login</h4>
+                    <p>Proyecto login</p>
+                    <a href="https://github.com/Cristian0976/Login"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Pongámonos en <span>Contacto!</span></h2>
+
+        <form name="contact" method="POST" netlify>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Numero de teléfono">
+                <input type="text" placeholder="Asunto" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+
+    </section>
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 Cristian Estegiano todos los derechos reservados</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+
+    </footer>
+
+    <!-- scroll  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- type js  -->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+    <!-- script  -->
+    <script src="./scripts.js"></script>
+</body>
+</html>
