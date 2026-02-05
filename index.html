@@ -189,19 +189,55 @@
 
         <h2 class="heading">Pongámonos en <span>Contacto!</span></h2>
 
-        <form name="contact" action="./index.html" method="POST" netlify
-        data-netlify-recaptcha="true">
-            <div class="input-box">
-                <input type="text" placeholder="Nombre Completo" required>
-                <input type="email" placeholder="email@example.com" required>
-            </div>
-            <div class="input-box">
-                <input type="tel" placeholder="Numero de teléfono">
-                <input type="text" placeholder="Asunto" required>
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-            <input type="submit" value="Enviar" class="btn">
-        </form>
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-recaptcha="true"
+>
+  <input type="hidden" name="form-name" value="contact">
+
+  <div class="input-box">
+    <input
+      type="text"
+      name="name"
+      placeholder="Nombre Completo"
+      required
+    >
+    <input
+      type="email"
+      name="email"
+      placeholder="email@example.com"
+      required
+    >
+  </div>
+
+  <div class="input-box">
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Número de teléfono"
+    >
+    <input
+      type="text"
+      name="subject"
+      placeholder="Asunto"
+      required
+    >
+  </div>
+
+  <textarea
+    name="message"
+    cols="30"
+    rows="10"
+    placeholder="Mensaje"
+    required
+  ></textarea>
+
+  <div data-netlify-recaptcha="true"></div>
+
+  <input type="submit" value="Enviar" class="btn">
+</form>
 
     </section>
 
