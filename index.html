@@ -2,39 +2,36 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Portfolio Web" />
-    <meta
-      name="description"
-      content="Soy un frontend developer. En mi portfolio puedes ver algunos de mis proyectos más destacados, así como mi formación, habilidades y contacto."
-    />
-    <meta name="keywords" content="Portfolio, Front-end developer, " />
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="Spanish" />
+    <title>Cristian Estegiano | Desarrollador Frontend y Analista GeneXus</title>
+    <meta name="description" content="Portfolio de Cristian Estegiano, desarrollador frontend y Analista GeneXus 16 en Uruguay. Proyectos, tecnologías y contacto." />
     <meta name="author" content="Cristian Estegiano" />
-    <!--CSS-->
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1f242d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cristian Estegiano | Desarrollador Frontend" />
+    <meta property="og:description" content="Proyectos, tecnologías y contacto de Cristian Estegiano, desarrollador frontend y Analista GeneXus 16." />
+    <meta property="og:image" content="https://cristianestegiano.netlify.app/img/portada-portfolio.png" />
+    <meta property="og:locale" content="es_UY" />
+    <link rel="canonical" href="https://cristianestegiano.netlify.app/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <!--Icons-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- header -->
 
     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#home" class="logo">Portfolio</a>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+      <button type="button" class="bx bx-menu" id="menu-icon" aria-label="Abrir menú" aria-expanded="false"></button>
 
       <nav class="navbar">
         <a href="#home" class="active">Inicio</a>
-        <a href="#about">Sobre mi</a>
+        <a href="#about">Sobre mí</a>
         <a href="#technologies">Tecnologías</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contacto</a>
@@ -50,31 +47,31 @@
         <h3>y soy <span class="multiple-text"></span></h3>
         <p>"Si puedes imaginarlo puedes programarlo..."</p>
         <div class="social-media">
-          <a href="https://www.facebook.com/cristian.estegiano" target="_blank"
+          <a href="https://www.facebook.com/cristian.estegiano" aria-label="Facebook" target="_blank" rel="noopener noreferrer"
             ><i class="bx bxl-facebook"></i
           ></a>
           <a
-            href="https://www.instagram.com/cristian_estegiano/"
-            target="_blank"
+            href="https://www.instagram.com/cristian_estegiano/" aria-label="Instagram"
+            target="_blank" rel="noopener noreferrer"
             ><i class="bx bxl-instagram"></i
           ></a>
-          <a href="https://github.com/Cristian0976" target="_blank"
+          <a href="https://github.com/Cristian0976" aria-label="GitHub" target="_blank" rel="noopener noreferrer"
             ><i class="bx bxl-github"></i
           ></a>
           <a
-            href="https://www.linkedin.com/in/cristian-estegiano/"
-            target="_blank"
+            href="https://www.linkedin.com/in/cristian-estegiano/" aria-label="LinkedIn"
+            target="_blank" rel="noopener noreferrer"
             ><i class="bx bxl-linkedin"></i
           ></a>
         </div>
 
-        <a href="./img/CVCristianEstegiano.pdf" target="_blank" class="btn"
+        <a href="./img/CVCristianEstegiano.pdf" target="_blank" rel="noopener noreferrer" class="btn"
           >Descargar CV</a
         >
       </div>
 
       <div class="home-img">
-        <img src="./img/Cristian.jpg" alt="" />
+        <img src="./img/Cristian.jpg" alt="Retrato de Cristian Estegiano" />
       </div>
     </section>
 
@@ -82,20 +79,17 @@
 
     <section class="about" id="about">
       <div class="about-img">
-        <img src="./img/Cristian.jpg" alt="" />
+        <img src="./img/Cristian.jpg" alt="" loading="lazy" />
       </div>
 
       <div class="about-content">
-        <h2 class="heading">Sobre <span>Mi</span></h2>
+        <h2 class="heading">Sobre <span>mí</span></h2>
         <h3>Frontend Developer</h3>
         <p>
-          Soy un joven entusiasta de la informática y todo lo relacionado con
-          ella. Actualmente me estoy formando centrado en Front-end. Sin
-          embargo, me gusta explorar nuevos lenguajes y siempre intento estar al
-          día. Aparte de estos, tengo otras habilidades informáticas, como el
-          uso de Genexus 16 para sitios low-code. Mi objetivo es seguir
-          adquiriendo habilidades y crecer como profesional en la industria de
-          desarrollo de software.
+          Soy desarrollador frontend en formación y Analista GeneXus 16.
+          Construyo sitios con HTML, CSS y JavaScript, y aplicaciones low-code
+          con GeneXus. Me gusta aprender herramientas nuevas y mi objetivo es
+          crecer como profesional en el desarrollo de software.
         </p>
       </div>
     </section>
@@ -110,35 +104,29 @@
           <i class="bx bxl-html5"></i>
           <h3>HTML 5</h3>
         </div>
-      </div>
-      <div class="technologies-container">
         <div class="technologies-box">
           <i class="bx bxl-css3"></i>
           <h3>CSS 3</h3>
         </div>
-      </div>
-      <div class="technologies-container">
         <div class="technologies-box">
           <i class="bx bxl-javascript"></i>
           <h3>JavaScript</h3>
         </div>
-      </div>
-      <div class="technologies-container">
         <div class="technologies-box">
           <i class="bx bxl-python"></i>
           <h3>Python</h3>
         </div>
-      </div>
-      <div class="technologies-container">
         <div class="technologies-box">
           <i class="bx bxl-react"></i>
           <h3>React JS</h3>
         </div>
-      </div>
-      <div class="technologies-container">
         <div class="technologies-box">
           <i class="bx bxl-git"></i>
           <h3>Git</h3>
+        </div>
+        <div class="technologies-box">
+          <i class="bx bx-data"></i>
+          <h3>GeneXus 16</h3>
         </div>
       </div>
     </section>
@@ -150,56 +138,51 @@
 
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="./img/portada-portfolio.png" alt="portada portfolio" />
+          <img loading="lazy" src="./img/portada-portfolio.png" alt="Captura de la portada del portfolio" />
           <div class="portfolio-layer">
             <h4>Portfolio</h4>
             <p>Portfolio profesional con proyectos y contacto.</p>
-            <a href="https://github.com/Cristian0976/Portfolio"
-              ><i class="bx bx-link-external"></i
+            <a href="https://github.com/Cristian0976/Portfolio" target="_blank" rel="noopener noreferrer" aria-label="Ver el código de Portfolio en GitHub"><i class="bx bx-link-external"></i
             ></a>
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="./img/coinbaseclon.png" alt="coin base clon" />
+          <img loading="lazy" src="./img/coinbaseclon.png" alt="Captura del clon de Coinbase" />
           <div class="portfolio-layer">
-            <h4>Diseño web</h4>
-            <p>Ejercicio practico de pagina web</p>
-            <a href="https://github.com/Cristian0976/CoinBaseClon"
-              ><i class="bx bx-link-external"></i
+            <h4>Clon de Coinbase</h4>
+            <p>Ejercicio práctico: clon de la página de Coinbase.</p>
+            <a href="https://github.com/Cristian0976/CoinBaseClon" target="_blank" rel="noopener noreferrer" aria-label="Ver el código de CoinBaseClon en GitHub"><i class="bx bx-link-external"></i
             ></a>
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="./img/TiendaComida.png" alt="tienda de comida" />
+          <img loading="lazy" src="./img/TiendaComida.png" alt="Captura de la tienda de comida" />
           <div class="portfolio-layer">
             <h4>Tienda Comida</h4>
-            <p>proyecto de tienda de comida</p>
-            <a href="https://github.com/Cristian0976/TiendaComida"
-              ><i class="bx bx-link-external"></i
+            <p>Tienda online de comida.</p>
+            <a href="https://github.com/Cristian0976/TiendaComida" target="_blank" rel="noopener noreferrer" aria-label="Ver el código de TiendaComida en GitHub"><i class="bx bx-link-external"></i
             ></a>
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="./img/Tiendahalloween.png" alt="" />
+          <img loading="lazy" src="./img/Tiendahalloween.png" alt="Captura de la tienda web con temática Halloween" />
           <div class="portfolio-layer">
             <h4>Tienda web</h4>
             <p>Tienda web con temática Halloween</p>
-            <a href="https://github.com/Cristian0976/TiendaHalloween"
-              ><i class="bx bx-link-external"></i
+            <a href="https://github.com/Cristian0976/TiendaHalloween" target="_blank" rel="noopener noreferrer" aria-label="Ver el código de TiendaHalloween en GitHub"><i class="bx bx-link-external"></i
             ></a>
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="./img/login.png" alt="" />
+          <img loading="lazy" src="./img/login.png" alt="Captura de la pantalla de login" />
           <div class="portfolio-layer">
             <h4>Login</h4>
-            <p>Proyecto login</p>
-            <a href="https://github.com/Cristian0976/Login"
-              ><i class="bx bx-link-external"></i
+            <p>Formulario de inicio de sesión.</p>
+            <a href="https://github.com/Cristian0976/Login" target="_blank" rel="noopener noreferrer" aria-label="Ver el código de Login en GitHub"><i class="bx bx-link-external"></i
             ></a>
           </div>
         </div>
@@ -216,35 +199,37 @@
         method="POST"
         data-netlify="true"
         data-netlify-recaptcha="true"
+        data-netlify-honeypot="bot-field"
         action="/success.html"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden"><label>No completar: <input name="bot-field" /></label></p>
 
         <div class="input-box">
           <input
             type="text"
-            name="name"
-            placeholder="Nombre Completo"
+            name="name" autocomplete="name"
+            placeholder="Nombre Completo" aria-label="Nombre Completo"
             required
           />
           <input
             type="email"
-            name="email"
-            placeholder="email@example.com"
+            name="email" autocomplete="email"
+            placeholder="email@example.com" aria-label="email@example.com"
             required
           />
         </div>
 
         <div class="input-box">
-          <input type="tel" name="phone" placeholder="Número de teléfono" />
-          <input type="text" name="subject" placeholder="Asunto" required />
+          <input type="tel" name="phone" autocomplete="tel" placeholder="Número de teléfono" aria-label="Número de teléfono" />
+          <input type="text" name="subject" placeholder="Asunto" aria-label="Asunto" required />
         </div>
 
         <textarea
           name="message"
           cols="30"
           rows="10"
-          placeholder="Mensaje"
+          placeholder="Mensaje" aria-label="Mensaje"
           required
         ></textarea>
 
@@ -269,12 +254,12 @@
     </footer>
 
     <!-- scroll  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" defer></script>
 
     <!-- type js  -->
-    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js" defer></script>
 
     <!-- script  -->
-    <script src="./scripts.js"></script>
+    <script src="./scripts.js" defer></script>
   </body>
 </html>

@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +5,6 @@
     text-decoration: none;
     list-style: none;
     border: none;
-    outline: none;
-    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -23,6 +18,8 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
 }
 
 body{
@@ -55,7 +52,6 @@ section{
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    cursor: default;
 }
 
 .navbar a{
@@ -75,6 +71,8 @@ section{
 }
     
 #menu-icon{
+    background: none;
+    cursor: pointer;
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
@@ -115,7 +113,9 @@ section{
     margin-bottom: 2rem;
 }
 
-span{
+.heading span,
+.multiple-text,
+.typed-cursor{
     color: var(--main-color);
 }
 
@@ -262,6 +262,8 @@ span{
 .portfolio-box img{
     width: 100%;
     height: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
     transition: .5s ease;
 }
 
@@ -559,13 +561,13 @@ span{
 .success-box h1 {
   color: var(--main-color);
   margin-bottom: 15px;
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 
 .success-box p {
   color: var(--text-color);
   opacity: 0.9;
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin-bottom: 30px;
 }
 
@@ -586,54 +588,41 @@ span{
 }
 
 
+/* mejoras de accesibilidad */
 
+.hidden{
+    display: none;
+}
 
+:focus-visible{
+    outline: .3rem solid var(--main-color);
+    outline-offset: .3rem;
+}
 
+.contact form input:focus-visible,
+.contact form textarea:focus-visible{
+    outline-offset: 0;
+}
 
+/* texto oscuro sobre el degradado cian (antes blanco, poco legible) */
+.portfolio-layer h4,
+.portfolio-layer p{
+    color: var(--bg-color);
+}
 
+.portfolio-box:focus-within .portfolio-layer{
+    transform: translateY(0);
+}
 
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    *,
+    *::before,
+    *::after{
+        animation: none !important;
+        transition: none !important;
+    }
+}
